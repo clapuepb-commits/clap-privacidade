@@ -1,534 +1,657 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-BR" data-palette="roxo">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#160c29">
-
-  <title>Política de Privacidade | CLAP</title>
-
-  <meta name="description"
-    content="Política de Privacidade do CLAP,
-    desenvolvido pela Eclipsona Studios.">
-
-  <style>
-    :root {
-      --bg: #130c22;
-      --card: #241936;
-      --purple: #a77be9;
-      --text: #f8f3ff;
-      --muted: #c5b7d9;
-      --line: #4a365f;
-      --gold: #f3d48f;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.8;
-    }
-
-    header {
-      padding: 70px 20px 58px;
-      text-align: center;
-      background:
-        radial-gradient(ellipse at top,
-          #59338d, #211334 65%, #130c22);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .brand {
-      display: inline-block;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      font-weight: 800;
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: clamp(30px, 6vw, 49px);
-      line-height: 1.15;
-      margin: 0 0 18px;
-    }
-
-    header p {
-      max-width: 650px;
-      margin: 0 auto;
-      color: var(--muted);
-    }
-
-    .date {
-      display: inline-block;
-      margin-top: 22px;
-      font-size: 13px;
-      color: var(--gold);
-    }
-
-    main {
-      width: min(850px, 100%);
-      margin: 0 auto;
-      padding: 35px 20px 80px;
-    }
-
-    .intro, section {
-      background: var(--card);
-      padding: 26px;
-      margin-bottom: 20px;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-    }
-
-    h2 {
-      color: #d4b6ff;
-      font-size: 21px;
-      line-height: 1.4;
-      margin: 0 0 16px;
-    }
-
-    p { margin: 12px 0; }
-
-    ul { padding-left: 22px; }
-
-    li { margin-bottom: 9px; }
-
-    a {
-      color: #e0c1ff;
-      overflow-wrap: anywhere;
-    }
-
-    a:hover { color: white; }
-
-    strong { color: white; }
-
-    .notice {
-      border-left: 3px solid var(--gold);
-      padding: 13px 16px;
-      background: #352448;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 36px 18px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    footer strong {
-      display: block;
-      font-size: 18px;
-      color: var(--gold);
-      margin-bottom: 8px;
-    }
-
-    @media (max-width: 500px) {
-      header { padding: 55px 18px 45px; }
-      .intro, section { padding: 21px; }
-      h2 { font-size: 19px; }
-    }
-  </style>
+<meta charset="utf-8"/>
+<!-- CLAP IPAD MINI 2 / SAFARI 12 -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-title" content="CLAP"/>
+<link rel="apple-touch-icon" href="./assets/clap_logo-CmkcS_KB.png"/>
+<link rel="manifest" href="./assets/manifest-CCDTGTwz.webmanifest"/>
+<script>/* CLAP iPad mini 2 / Safari iOS 12.5 - compatibilidade sem SDK nativo. */
+(function(){
+ if(typeof window.globalThis === 'undefined') window.globalThis=window;
+ if(!Object.fromEntries) Object.fromEntries=function(iter){var result={};for(var i=0;i<iter.length;i++){result[iter[i][0]]=iter[i][1];}return result;};
+ if(!Array.prototype.at) Array.prototype.at=function(i){i=Number(i)||0;if(i<0)i=this.length+i;return this[i];};
+ if(!String.prototype.replaceAll) String.prototype.replaceAll=function(search,repl){return this.split(search).join(repl);};
+ if(!Promise.allSettled) Promise.allSettled=function(promises){return Promise.all(Array.prototype.map.call(promises,function(p){return Promise.resolve(p).then(function(value){return{status:'fulfilled',value:value};},function(reason){return{status:'rejected',reason:reason};});}));};
+ if(!Element.prototype.replaceChildren) Element.prototype.replaceChildren=function(){while(this.firstChild)this.removeChild(this.firstChild);for(var i=0;i<arguments.length;i++){var child=arguments[i];this.appendChild(typeof child==='string'?document.createTextNode(child):child);}};
+ if(!Element.prototype.append) Element.prototype.append=function(){for(var i=0;i<arguments.length;i++){var child=arguments[i];this.appendChild(typeof child==='string'?document.createTextNode(child):child);}};
+ if(typeof window.crypto !== 'undefined' && !window.crypto.randomUUID && window.crypto.getRandomValues){
+  try{window.crypto.randomUUID=function(){var a=new Uint8Array(16);window.crypto.getRandomValues(a);a[6]=(a[6]&15)|64;a[8]=(a[8]&63)|128;var s=Array.prototype.map.call(a,function(x){return ('0'+x.toString(16)).slice(-2);}).join('');return s.slice(0,8)+'-'+s.slice(8,12)+'-'+s.slice(12,16)+'-'+s.slice(16,20)+'-'+s.slice(20);};}catch(_e){}
+ }
+ if(!window.AbortController) {
+  function LegacyAbortController(){this.signal={aborted:false,addEventListener:function(){},removeEventListener:function(){}};}
+  LegacyAbortController.prototype.abort=function(){this.signal.aborted=true;};window.AbortController=LegacyAbortController;
+ }
+})();
+</script>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#6421b5" name="theme-color"/>
+<meta content="CLAP — Central de Lançamentos, Atividades e Prazos. Agenda acadêmica da turma." name="description"/>
+<title>CLAP | Lançamentos, Atividades e Prazos</title>
+<style>:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;--page:#f8f6fc;--surface:#fff;--text:#23172f;--muted:#736781;--line:#eee8f5;--purple:#6925bb;--deep:#48118e;--lilac:#efe5fd;--accent:#ffdd8a;--shadow:0 8px 24px #3e1b6a12;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;color:var(--text);background:#251139;margin:0}button{font:inherit;cursor:pointer}button:focus-visible{outline-offset:3px;outline:3px solid #e5a900}[hidden]{display:none!important}.frame{background:var(--page);max-width:455px;min-height:100dvh;margin:0 auto;position:relative;overflow:clip}@media (min-width:560px){body{background:radial-gradient(circle at top,#6532b0,#221334 74%);padding:24px 0}.frame{border-radius:30px;min-height:calc(100dvh - 48px);box-shadow:0 24px 75px #00000047}}.welcome{flex-direction:column;min-height:100dvh;display:flex}.hero{color:#fff;background:linear-gradient(153deg,#8238d9 0%,#5c19ab 56%,#461084 100%);border-radius:0 0 43px 43px;min-height:450px;padding:36px 28px 66px;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";pointer-events:none;border:1px solid #ffffff1f;border-radius:50%;position:absolute}.hero:before{width:420px;height:420px;top:-225px;right:-265px}.hero:after{width:330px;height:330px;bottom:-210px;left:-230px}.brand{letter-spacing:-.8px;font-size:21px;font-weight:850;position:relative}.brand span{opacity:.76;letter-spacing:.07em;margin-left:6px;font-size:12px;font-weight:500}.center-art{background:#ffffff26;border-radius:38px;width:138px;height:138px;margin:44px auto 23px;padding:8px;position:relative;box-shadow:0 20px 48px #1e054e4d}.logo{object-fit:cover;border-radius:31px;width:100%;height:100%;display:block}.hero h1{letter-spacing:-1.8px;text-align:center;max-width:360px;margin:0 auto 13px;font-size:max(31px,min(8vw,41px));line-height:1.08;position:relative}.hero p{color:#ffffffdb;text-align:center;max-width:315px;margin:auto;font-size:14px;line-height:1.6;position:relative}.welcome-lower{margin-top:auto;padding:27px 25px 32px}.eyebrow{text-transform:uppercase;letter-spacing:.11em;color:var(--purple);margin:0 0 12px;font-size:11px;font-weight:800}.value-grid{grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 28px;display:grid}.value{background:var(--surface);border:1px solid var(--line);text-align:center;min-height:90px;box-shadow:var(--shadow);border-radius:19px;padding:13px 7px}.value b{margin-top:6px;font-size:12px;display:block}.value .emoji{font-size:24px}.primary-btn{background:var(--purple);color:#fff;border:none;border-radius:16px;width:100%;padding:16px 20px;font-size:15px;font-weight:760;display:block;box-shadow:0 8px 22px #6925bb40}.primary-btn:hover{background:var(--deep)}.note{color:var(--muted);text-align:center;margin:13px 0 0;font-size:12px;line-height:1.5}.dashboard{flex-direction:column;min-height:100dvh;display:flex}.topbar{color:#fff;background:linear-gradient(150deg,#7a34d0,#542098);border-radius:0 0 27px 27px;padding:20px 22px 27px}.topbar-line{justify-content:space-between;align-items:center;gap:12px;display:flex}.topbar-logo{letter-spacing:-.8px;align-items:center;gap:9px;font-size:23px;font-weight:850;display:flex}.small-logo{border-radius:11px;width:38px;height:38px}.return-btn{color:#fff;background:#ffffff1f;border:1px solid #ffffff59;border-radius:12px;padding:9px 11px;font-size:12px}.topbar h2{letter-spacing:-.7px;margin:24px 0 5px;font-size:25px}.topbar p{color:#ffffffd4;margin:0;font-size:13px;line-height:1.5}.demo-pill{letter-spacing:.08em;color:#6424a0;background:#f9e4a8;border-radius:100px;margin-top:17px;padding:5px 9px;font-size:10px;font-weight:800;display:inline-block}.main{flex:1;padding:23px 18px 24px}.section-title{justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 14px;display:flex}.section-title h3{letter-spacing:-.3px;margin:0;font-size:17px}.section-title small{color:var(--muted);font-size:11px}.card{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:21px;margin-bottom:20px;padding:19px}.mini-label{letter-spacing:.05em;text-transform:uppercase;color:var(--purple);font-size:11px;font-weight:750}.class-card{border-left:5px solid #a46beb}.class-card h4{margin:9px 0 4px;font-size:18px}.secondary{color:var(--muted);font-size:13px;line-height:1.5}.class-meta{border-top:1px solid var(--line);color:var(--muted);align-items:center;gap:10px;margin-top:15px;padding-top:12px;font-size:12px;display:flex}.dot{background:#bd95e9;border-radius:100%;flex-shrink:0;width:8px;height:8px}.task-row{align-items:flex-start;gap:13px;display:flex}.task-icon{background:var(--lilac);border-radius:14px;flex-shrink:0;place-items:center;width:44px;height:44px;font-size:20px;display:grid}.task-row h4{margin:1px 0 5px;font-size:15px}.task-row+.task-row{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}.light-card{background:var(--lilac);border-radius:18px;margin-bottom:20px;padding:17px}.light-card p{margin:6px 0 0}.page-intro{color:var(--muted);margin:0 0 20px;font-size:13px;line-height:1.65}.empty-illustration{background:var(--lilac);border-radius:21px;place-items:center;width:70px;height:70px;margin-bottom:16px;font-size:34px;display:grid}.empty-heading{margin:0 0 8px;font-size:17px}.status-group{border:none;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;display:flex}.status-group legend{color:var(--text);padding:0 0 10px;font-size:13px;font-weight:760}.status-btn{color:var(--text);background:var(--page);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:12px}.status-btn[aria-pressed=true]{border-color:var(--purple);background:var(--lilac);color:var(--deep);font-weight:800}.status-result{color:var(--muted);margin-top:14px;font-size:12px}.two-cards{grid-template-columns:1fr 1fr;gap:11px;display:grid}.two-cards .card{min-height:135px;padding:16px}.two-cards h4{margin:10px 0 5px;font-size:14px}.avatar{color:#fff;background:linear-gradient(135deg,#9c5fe7,#54209a);border-radius:20px;place-items:center;width:65px;height:65px;margin-bottom:12px;font-size:24px;font-weight:850;display:grid}.secondary-btn{background:var(--surface);width:100%;color:var(--purple);border:1px solid var(--purple);border-radius:13px;padding:12px;font-weight:700}.bottom-nav{background:var(--surface);border-top:1px solid var(--line);padding:11px 7px max(11px, env(safe-area-inset-bottom));z-index:2;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;display:grid;position:-webkit-sticky;position:sticky;bottom:0;box-shadow:0 -5px 26px #3a1c5d0d}.nav-btn{color:var(--muted);background:0 0;border:0;border-radius:12px;flex-direction:column;align-items:center;gap:5px;padding:6px 1px;font-size:10px;font-weight:650;display:flex}.nav-btn[aria-current=page]{color:var(--purple);background:var(--lilac)}.nav-btn svg{stroke:currentColor;fill:none;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;width:21px;height:21px}[data-theme=dark]{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--page:#1d1726;--surface:#2b2239;--text:#f5f0fa;--muted:#c7b9d5;--line:#48365c;--purple:#bb8eff;--deep:#e0c3ff;--lilac:#443055;--shadow:none}[data-theme=dark] .primary-btn{color:#19082e;background:#9d63f0}[data-theme=dark] .demo-pill{color:#5c2990}[data-theme=dark] .status-btn[aria-pressed=true]{color:var(--text)}@media (prefers-reduced-motion:no-preference){.value,.primary-btn,.nav-btn{transition:background-color .18s,transform .18s}.primary-btn:active{transform:scale(.985)}}.auth-entry{margin-top:10px}.auth-screen{background:var(--page);min-height:100dvh}.auth-header{color:#fff;background:linear-gradient(152deg,#8238d9,#4d198d);border-radius:0 0 32px 32px;padding:20px 26px 32px}.auth-header .return-btn{margin-bottom:30px}.auth-symbol{background:#ffffff26;border-radius:21px;place-items:center;width:72px;height:72px;margin:0 0 18px;font-size:43px;display:grid}.auth-header h1{margin:0 0 7px;font-size:28px}.auth-header p{color:#ead7ff;margin:0;font-size:13px;line-height:1.5}.auth-content{padding:23px 24px 36px}.auth-switch{background:var(--lilac);border-radius:15px;grid-template-columns:1fr 1fr;margin-bottom:24px;padding:5px;display:grid}.auth-switch button{color:var(--muted);background:0 0;border:0;border-radius:11px;padding:12px;font-weight:700}.auth-switch button[aria-pressed=true]{background:var(--surface);color:var(--purple);box-shadow:var(--shadow)}.auth-form{flex-direction:column;gap:9px;display:flex}.auth-form label{margin-top:8px;font-size:12px;font-weight:750}.auth-form input,.auth-form textarea{border:1px solid var(--line);background:var(--surface);width:100%;min-width:0;color:var(--text);font:inherit;border-radius:13px;padding:13px 14px;font-size:14px}.auth-form input:focus-visible{outline-offset:1px;outline:3px solid #b184f0}.auth-form textarea:focus-visible{outline-offset:1px;outline:3px solid #b184f0}.auth-form .primary-btn{margin-top:12px}.auth-content>.secondary-btn{margin-top:17px}.auth-content>.secondary-btn:disabled{opacity:.66;cursor:not-allowed}.auth-feedback{min-height:1.5em;color:var(--text);font-size:13px;line-height:1.55}.auth-feedback[data-error=true]{color:#b02e35}[data-theme=dark] .auth-feedback[data-error=true]{color:#ffa4ab}.otp-card{margin:20px 0}.otp-card h2{font-size:18px}.approval-screen{background:var(--page);min-height:100dvh}.approval-screen .auth-header{padding-top:max(40px, env(safe-area-inset-top))}.admin-person{justify-content:space-between;align-items:flex-start;gap:8px;display:flex}.admin-person h4{overflow-wrap:anywhere;margin:0 0 6px;font-size:16px}.admin-person p{overflow-wrap:anywhere;margin:0}.admin-pill{background:var(--lilac);color:var(--purple);border-radius:100px;flex-shrink:0;padding:6px 9px;font-size:11px;font-weight:800;display:inline-flex}.admin-actions{flex-wrap:wrap;gap:8px;margin-top:14px;display:flex}.admin-actions button{border:1px solid var(--purple);color:var(--purple);background:var(--surface);border-radius:12px;flex:100px;padding:11px 8px;font-size:12px;font-weight:750}.admin-actions button:disabled{opacity:.5;cursor:not-allowed}.admin-actions button:focus-visible{outline-offset:2px;outline:3px solid #f0ca65}.admin-empty{text-align:center;padding:20px}.cat-tabs{gap:8px;padding:0 0 14px;display:flex;overflow:auto}.cat-tab{white-space:nowrap;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 14px}.cat-tab[aria-pressed=true]{background:var(--purple);color:#fff;border-color:var(--purple)}.cat-card h4{margin:10px 0;font-size:18px}.cat-card .primary-btn,.cat-card .secondary-btn{margin-top:12px}.cat-link{color:var(--purple);margin-top:8px;font-size:13px;display:inline-block}.cat-link-btn{color:var(--purple);text-align:left;background:0 0;border:0;padding:12px 0;font-size:13px}.cat-summary{border-top:1px solid var(--line);margin-top:16px;padding-top:14px}.cat-avatarline{flex-wrap:wrap;align-items:center;gap:4px;display:flex}.cat-avatar,.cat-overflow,.cat-roster-photo{color:#fff;object-fit:cover;background:#8b60c0;border-radius:50%;place-items:center;width:38px;height:38px;font-size:13px;font-weight:700;display:grid}.cat-overflow{background:var(--lilac);color:var(--purple)}.cat-item{border-bottom:1px solid var(--line);flex-direction:column;gap:5px;padding:12px 0;display:flex}.cat-item:last-child{border-bottom:0}.cat-item strong{font-size:13px}.cat-admin-form{flex-direction:column;gap:8px;margin:12px 0 20px;display:flex}.cat-admin-form input,.cat-admin-form select,.cat-select{width:100%;max-width:100%;font:inherit;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:12px;margin:4px 0 10px;padding:12px;font-size:14px;display:block}.cat-admin-form label,.card>label{color:var(--text);font-size:12px;font-weight:700}.cat-two{grid-template-columns:1fr 1fr;gap:12px;display:grid}.cat-two>div{min-width:0}.cat-check{align-items:center;gap:8px;display:flex}.cat-check input{width:auto;margin:0}.cat-small{font:inherit;border:1px solid var(--purple);color:var(--purple);background:var(--surface);border-radius:9px;align-self:start;padding:7px 10px;font-size:12px}.cat-schedule-edit{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;display:flex}.cat-privacy{border:1px solid var(--line);border-radius:15px;margin-top:16px;padding:12px}.cat-privacy label{align-items:flex-start;gap:8px;font-size:13px;display:flex}@media (max-width:340px){.cat-two{grid-template-columns:1fr}}.diario-card h4{margin:0 0 10px;font-size:17px}.diario-card label{margin:13px 0 6px;font-size:12px;font-weight:750;display:block}.diario-card input,.diario-card select,.diario-card textarea{width:100%;font:inherit;border:1px solid var(--line);background:var(--surface);min-width:0;color:var(--text);border-radius:12px;padding:12px;font-size:14px;line-height:1.45}.diario-card textarea{resize:vertical;min-height:100px}.diario-entry{border:1px solid var(--line);background:var(--surface);border-radius:16px;margin:12px 0;padding:14px}.diario-entry-head{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;display:flex}.diario-tag{background:var(--lilac);color:var(--purple);border-radius:30px;padding:5px 8px;font-size:10px;font-weight:800}.diario-approved{color:#135834;background:#d9f5e7}.diario-rejected{color:#8e2828;background:#fce4e4}.diario-summary{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.6}.diario-materials{flex-wrap:wrap;gap:9px;margin:12px 0;display:flex}.diario-material{border:1px solid var(--line);width:100%;color:var(--purple);overflow-wrap:anywhere;border-radius:11px;padding:11px;font-size:13px;display:block}.diario-thumb{object-fit:cover;border:1px solid var(--line);cursor:zoom-in;border-radius:12px;width:auto;max-width:125px;height:100px}.diario-thumb.diario-large{object-fit:contain;cursor:zoom-out;width:100%;max-width:100%;height:auto;max-height:none}.diario-photo{max-width:100%}.diario-review-actions{flex-wrap:wrap;gap:8px;margin-top:12px;display:flex}.diario-review-actions>*{flex:120px;padding:11px;font-size:13px}.diario-divider{border:0;border-top:1px solid var(--line);margin:24px 0}.planej-card{margin:12px 0}.planej-card h4{margin:10px 0;font-size:17px}.planej-form,.planej-comment-form{flex-direction:column;gap:10px;margin:12px 0;display:flex}.planej-form label,.planej-field{color:var(--text);flex-direction:column;gap:5px;margin:10px 0;font-size:12px;font-weight:700;display:flex}.planej-form input,.planej-form select,.planej-form textarea,.planej-select,.planej-comment-form textarea{border:1px solid var(--line);background:var(--surface);width:100%;min-width:0;color:var(--text);font-size:14px;font:inherit;border-radius:11px;padding:12px}.planej-content{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.6}.planej-external{color:var(--purple);overflow-wrap:anywhere;padding:12px 0;display:block}.planej-discussion{border-top:1px solid var(--line);margin:12px 0;padding-top:12px}.planej-comment,.planej-event,.planej-mini{border-bottom:1px solid var(--line);overflow-wrap:anywhere;padding:12px 0}.planej-comment:last-child,.planej-mini:last-child,.planej-event:last-child{border-bottom:0}.planej-comment p,.planej-mini p,.planej-event p{margin:5px 0}.planej-month-nav{text-transform:capitalize;text-align:center;justify-content:space-between;align-items:center;gap:8px;margin:14px 0;display:flex}.planej-calendar-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:10px 0;display:grid}.planej-weekday{color:var(--muted);text-align:center;padding:7px 0;font-size:10px;font-weight:800}.planej-day{background:var(--surface);min-height:43px;color:var(--text);border:1px solid var(--line);border-radius:9px;flex-direction:column;justify-content:center;align-items:center;gap:4px;font-size:12px;display:flex}.planej-day.selected{outline:2px solid var(--purple);outline-offset:0}.planej-day.today{color:var(--purple);font-weight:900}.planej-dot{background:var(--purple);border-radius:100%;width:6px;height:6px;font-size:0}.planej-day-details{border-top:1px solid var(--line);margin-top:12px;padding-top:8px}.planej-day-details h4{font-size:15px}.planej-event button{margin:5px 6px 0 0}#planej-atualizar{margin:4px 0 12px}:root{--top-a:#7a34d0;--top-b:#542098;--hero-a:#8238d9;--hero-b:#461084}[data-palette=rosa]{--purple:#aa356f;--deep:#81234f;--lilac:#fce5f0;--top-a:#bd4e88;--top-b:#822755;--hero-a:#bd4e88;--hero-b:#822755}[data-palette=azul]{--purple:#2869ac;--deep:#174876;--lilac:#e1f0ff;--top-a:#3585d0;--top-b:#17548e;--hero-a:#3585d0;--hero-b:#17548e}[data-palette=verde]{--purple:#1b806c;--deep:#145d4e;--lilac:#dff7ec;--top-a:#32a68a;--top-b:#136657;--hero-a:#32a68a;--hero-b:#136657}[data-palette=laranja]{--purple:#ae5e21;--deep:#823c15;--lilac:#fff0df;--top-a:#d98d3a;--top-b:#9f4f1c;--hero-a:#d98d3a;--hero-b:#9f4f1c}[data-theme=dark][data-palette=rosa]{--purple:#ffabd4;--deep:#ffd0e6;--lilac:#4c293d}[data-theme=dark][data-palette=azul]{--purple:#96ccff;--deep:#c2e3ff;--lilac:#263e59}[data-theme=dark][data-palette=verde]{--purple:#86e6ca;--deep:#b3f8dd;--lilac:#244c43}[data-theme=dark][data-palette=laranja]{--purple:#ffc58e;--deep:#ffe0bd;--lilac:#503c2b}.topbar{background:linear-gradient(150deg,var(--top-a),var(--top-b))}.hero,.auth-header{background:linear-gradient(152deg,var(--hero-a),var(--hero-b))}.topbar-actions{align-items:center;gap:7px;display:flex}.topbar-actions .return-btn{padding:9px;font-size:11px}.topbar h2{margin-top:18px}.topbar .demo-pill{display:none}.topbar{padding-bottom:21px}.nav-icon{font-size:23px;font-weight:750;line-height:22px;display:block}.study-grid{gap:11px;margin-bottom:30px;display:grid}.study-tile{background:var(--surface);border:1px solid var(--line);text-align:left;color:var(--text);box-shadow:var(--shadow);border-radius:19px;grid-template-columns:52px 1fr;align-items:center;column-gap:10px;padding:19px;display:grid}.study-tile .study-emoji{background:var(--lilac);border-radius:14px;grid-row:span 3;place-items:center;width:49px;height:49px;font-size:30px;display:grid}.study-tile strong{font-size:16px}.study-tile small{color:var(--muted);margin-top:4px;font-size:12px;line-height:1.5}.study-arrow{color:var(--purple);margin-top:9px;font-size:12px;font-weight:750}.text-back{color:var(--purple);background:0 0;border:0;padding:4px 1px 18px;font-weight:750}.app-disclosure{padding:15px}.app-disclosure summary{cursor:pointer;justify-content:space-between;align-items:center;font-weight:750;display:flex}.app-disclosure summary span{color:var(--purple);font-size:12px}.app-help p{color:var(--muted);margin:0;font-size:13px;line-height:1.7}.app-help h4{margin:0 0 9px;font-size:16px}.profile-display{padding:0;overflow:hidden}.profile-banner{background:linear-gradient(135deg,var(--top-a),var(--top-b));background-position:50%;background-size:cover;height:155px}.profile-banner img{object-fit:cover;width:100%;height:100%;display:block}.profile-card-content{margin-top:-33px;padding:0 18px 20px;position:relative}.profile-card-content .avatar{border:4px solid var(--surface);width:74px;height:74px;margin-bottom:9px;overflow:hidden}.profile-card-content .avatar img{object-fit:cover;width:100%;height:100%}.profile-card-content h4{margin-top:5px}.profile-files{border-top:1px solid var(--line);flex-direction:column;gap:8px;margin-top:16px;padding-top:16px;display:flex}.profile-files label,.card#profile-appearance label{font-size:12px;font-weight:750}.profile-files input{background:var(--surface);color:var(--text);border-radius:9px;max-width:100%;padding:9px;font-size:12px}.community-input{border:1px solid var(--line);background:var(--surface);width:100%;color:var(--text);font:inherit;border-radius:12px;margin-top:7px;padding:12px}.member-card{padding:0;overflow:hidden}.member-cover{background:linear-gradient(135deg,var(--top-a),var(--top-b));background-position:50%;background-size:cover;height:77px}.member-cover img{object-fit:cover;width:100%;height:100%}.member-inner{margin-top:-23px;padding:0 15px 15px}.member-head{align-items:end;gap:10px;display:flex}.member-photo{background:var(--purple);color:#fff;border:3px solid var(--surface);border-radius:50%;flex-shrink:0;place-items:center;width:49px;height:49px;font-weight:800;display:grid;overflow:hidden}.member-photo img{object-fit:cover;width:100%;height:100%}.member-name{font-size:15px;font-weight:800}.member-bio{color:var(--muted);overflow-wrap:anywhere;margin:9px 0 0;font-size:12px;line-height:1.55}.member-open{margin-top:11px}.member-detail-cover{background:linear-gradient(135deg,var(--top-a),var(--top-b));border-radius:17px;height:170px;overflow:hidden}.member-detail-cover img{object-fit:cover;width:100%;height:100%}.closed-pill{border:1px solid var(--line);background:var(--page);color:var(--muted);border-radius:30px;padding:5px 9px;font-size:11px;font-weight:750;display:inline-block}@media (max-width:350px){.bottom-nav{padding-left:3px;padding-right:3px}.nav-btn{font-size:9px}.study-tile{padding:13px}}</style>
+  <script type="module" crossorigin src="./assets/index-CuNln7zl.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CFKhb7rM.css">
 </head>
-
 <body>
+<div class="frame">
+<!-- Primeira tela: apresentação do CLAP. Não realiza login. -->
+<section aria-labelledby="welcome-title" class="welcome" id="welcome">
+<div class="hero">
+<div class="brand">CLAP <span>• NOSSA TURMA</span></div>
+<div class="center-art"><img alt="Símbolo do CLAP: duas mãos aplaudindo sobre um fundo roxo" class="logo" src="./assets/clap_logo-CmkcS_KB.png"/></div>
+<h1 id="welcome-title">A vida acadêmica em um só lugar.</h1>
+<p>Central de Lançamentos, Atividades e Prazos. Sua vida acadêmica, organizada.</p>
+</div>
+<div class="welcome-lower">
+<p class="eyebrow">Tudo o que importa</p>
+<div aria-label="Recursos previstos" class="value-grid">
+<div class="value"><span aria-hidden="true" class="emoji" data-ui-icon="book"></span><b>Disciplinas</b></div>
+<div class="value"><span aria-hidden="true" class="emoji" data-ui-icon="clipboard"></span><b>Atividades</b></div>
+<div class="value"><span aria-hidden="true" class="emoji" data-ui-icon="calendar"></span><b>Agendas</b></div>
+</div>
+<button class="primary-btn" id="open-auth" type="button">Entrar ou criar minha conta</button>
+<button class="secondary-btn clap15-replay-link" id="clap15-replay" type="button">Rever abertura com música</button>
+<p class="note">Acesso somente para integrantes aprovados pela administração do CLAP.</p>
+</div>
+</section>
+<!-- Autenticação: a interface segue o estilo original e não exibe senhas em texto. -->
+<section aria-labelledby="auth-heading" class="auth-screen" hidden="" id="auth-screen">
+<div class="auth-header">
+<button class="return-btn" id="auth-back" type="button">← Voltar</button>
+<div aria-hidden="true" class="auth-symbol"><img src="./assets/clap_logo-CmkcS_KB.png" alt="" loading="eager" onerror="this.style.display='none'"/></div>
+<h1 id="auth-heading">Boas-vindas ao CLAP</h1>
+<p class="clap09-auth-name">Central de Lançamentos, Atividades e Prazos</p>
+<p>Uma conta, sua agenda e sua turma em um só lugar.</p>
+</div>
+<div class="auth-content">
+<div aria-label="Tipo de acesso" class="auth-switch" role="group">
+<button aria-pressed="true" id="login-tab" type="button">Entrar</button>
+<button aria-pressed="false" id="signup-tab" type="button">Criar conta</button>
+</div>
+<form class="auth-form" id="auth-form">
+<div hidden="" id="signup-fields">
+<label for="signup-nickname">Como quer ser chamada?</label>
+<input autocomplete="nickname" id="signup-nickname" maxlength="32" minlength="2" placeholder="Seu apelido"/>
+<label for="clap15-birth-signup">Data de nascimento (obrigatória)</label>
+<input id="clap15-birth-signup" type="date" autocomplete="bday" aria-describedby="clap15-birth-info"/>
+<small id="clap15-birth-info">Usada para comemorar seu aniversário. A data não aparece para outros estudantes.</small>
+</div>
+<label for="auth-email">E-mail</label>
+<input autocomplete="email" id="auth-email" placeholder="voce@exemplo.com" required="" type="email"/>
+<label for="auth-password">Senha</label>
+<input autocomplete="current-password" id="auth-password" minlength="6" placeholder="Sua senha" required="" type="password"/>
+<button class="primary-btn" id="auth-submit" type="submit">Entrar com e-mail</button>
+<button class="clap26-forgot" id="clap26-forgot" type="button">Esqueci minha senha</button>
 
-<header>
-  <div class="brand">✦ Eclipsona Studios ✦</div>
-
-  <h1>Política de<br>Privacidade</h1>
-
-  <p>
-    CLAP — Central de Lançamentos,
-    Atividades e Prazos.
-  </p>
-
-  <span class="date">
-    Atualizado em 15 de novembro de 2026
-  </span>
+</form>
+<div id="clap28-recovery" class="clap28-recovery" hidden>
+  <h3>Recuperar minha conta</h3>
+  <p>Copie o código completo recebido por e-mail e escolha uma nova senha.</p>
+  <form id="clap28-recovery-form" class="auth-form">
+    <label for="clap28-recovery-email">E-mail cadastrado</label><input id="clap28-recovery-email" type="email" autocomplete="email" required>
+    <label for="clap28-recovery-code">Código de verificação</label><input id="clap28-recovery-code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,8}" minlength="6" maxlength="8" required placeholder="Digite o código completo">
+    <label for="clap28-recovery-password">Nova senha (8 caracteres ou mais)</label><input id="clap28-recovery-password" type="password" autocomplete="new-password" minlength="8" required>
+    <button class="primary-btn" id="clap28-recovery-submit" type="submit">Trocar minha senha</button>
+    <button class="secondary-btn" id="clap29-resend-recovery" type="button">Reenviar código</button>
+    <button class="secondary-btn" id="clap28-recovery-cancel" type="button">Cancelar</button>
+    <p id="clap28-recovery-feedback" role="status" aria-live="polite"></p>
+  </form>
+</div>
+<p aria-live="polite" class="auth-feedback" id="auth-feedback" role="status"></p>
+<div class="light-card" hidden="" id="signup-confirm-info" role="status">
+<strong> Confira seu e-mail</strong>
+<p class="secondary">Enviamos um link de confirmação. Depois de confirmar, volte ao CLAP e entre com seu e-mail e senha. Seu acesso ficará pendente até a aprovação da administração.</p>
+</div>
+<div class="clap69-signup-ack" id="clap69-signup-ack" hidden><label><input type="checkbox" id="clap69-signup-read"/> Li as informações de privacidade do CLAP e estou ciente do tratamento descrito.</label><p><a href="https://clapuepb-commits.github.io/clap-privacidade/" target="_blank" rel="noopener">Ler Política de Privacidade</a></p></div><p class="note">Seus dados serão armazenados no Supabase. Seu acesso às áreas compartilhadas depende de aprovação.</p>
+</div>
+</section>
+<!-- Sem aprovação não é possível acessar a área da turma. -->
+<section aria-labelledby="approval-heading" class="approval-screen" hidden="" id="approval-screen">
+<div class="auth-header">
+<div aria-hidden="true" class="auth-symbol"></div>
+<h1 id="approval-heading">Aguardando aprovação</h1>
+<p id="approval-subtitle">Sua conta foi criada. A administração precisa liberar o acesso.</p>
+</div>
+<div class="auth-content">
+<div class="card" style="margin-top:12px">
+<div aria-hidden="true" class="empty-illustration" id="approval-icon"></div>
+<h2 class="empty-heading" id="approval-status">Solicitação pendente</h2>
+<p class="secondary" id="approval-description">Você ainda não pode acessar as informações da turma.</p>
+<p class="secondary" id="approval-email"></p>
+</div>
+<button class="primary-btn" id="approval-refresh" type="button">Verificar minha aprovação</button>
+<button class="secondary-btn" id="approval-logout" style="margin-top:12px" type="button">Sair desta conta</button>
+<p aria-live="polite" class="note" id="approval-feedback" role="status"></p>
+</div>
+</section>
+<!-- Prévia navegável, com dados fictícios e sem conexão à turma. -->
+<section aria-label="Demonstração do CLAP" class="dashboard" hidden="" id="dashboard">
+<header class="topbar">
+<div class="topbar-line">
+<div class="topbar-logo"><img alt="" class="small-logo" src="./assets/clap_logo-CmkcS_KB.png"/> CLAP</div>
+<div class="topbar-actions"><button class="return-btn" id="help-open" type="button"> Ajuda</button></div>
+</div>
+<h2 id="page-title" tabindex="-1">Olá! </h2>
+<p id="page-desc">Sua vida acadêmica, organizada.</p>
+<span class="demo-pill">CLAP • EM DESENVOLVIMENTO</span>
 </header>
+<main class="main" id="main-content">
+<section aria-labelledby="home-heading" class="view" data-view="home">
+<div class="section-title"><h3 id="home-heading">Aula em destaque</h3><small>Grade institucional</small></div>
+<article class="card class-card" id="aula-hoje"><p class="secondary">Carregando as aulas em que você se inscreveu…</p></article>
+<section class="clap-game-feature" id="clap-game-feature" aria-label="Destaque semanal da turma">
+<div class="clap-game-feature-head"><h3>🌟 Destaque da semana</h3><button type="button" data-open="games" class="clap-game-feature-cta">Ver jogos e ranking</button></div>
+<div id="clap-game-star" role="status" aria-live="polite"><p class="secondary">Carregando destaque…</p></div>
+</section>
+<div class="section-title" id="home-due-heading"><h3>Próximas entregas</h3><small>Das suas disciplinas</small></div>
+<article class="card"><div id="planej-home-prazos"><p class="secondary">Carregando…</p></div></article>
+<details class="card app-disclosure"><summary>Novidades recentes <span>Ver publicações ▾</span></summary><div id="planej-home-feed" style="margin-top:12px"></div></details>
+</section>
+<section aria-labelledby="study-heading" class="view" data-view="study" hidden="">
+<div class="section-title"><h3 id="study-heading">Estudos</h3><small>Encontre rápido o que precisa</small></div>
+<p class="page-intro">Escolha um caminho: ver avisos, abrir suas disciplinas, consultar materiais ou rever conteúdos antigos.</p>
+<div class="study-grid">
+<button class="study-tile" data-open="subjects" type="button"><span class="study-emoji" data-ui-icon="book"></span><strong>Minhas disciplinas</strong><small>Suas cadeiras, professores, horários e inscrições</small><span class="study-arrow">Ver disciplinas →</span></button>
+<button class="study-tile" data-open="tasks" type="button"><span class="study-emoji" data-ui-icon="clipboard"></span><strong>Atividades e avisos</strong><small>Trabalhos, comunicados, prazos e comentários</small><span class="study-arrow">Ver atividades →</span></button>
+<button class="study-tile" data-open="diary" type="button"><span class="study-emoji" data-ui-icon="file"></span><strong>Materiais e diário</strong><small>Resumos, slides, fotos e registros das aulas</small><span class="study-arrow">Abrir diário →</span></button>
+<button class="study-tile" data-open="calendar" type="button"><span class="study-emoji" data-ui-icon="calendar"></span><strong>Calendário</strong><small>Próximas aulas e compromissos</small><span class="study-arrow">Ver calendário →</span></button>
+<button class="study-tile" data-open="games" type="button"><span class="study-emoji" data-ui-icon="gamepad"></span><strong>Jogos e ranking</strong><small>Treinos por disciplina, quiz, flashcards e conquistas</small></button>
+<button class="study-tile" data-open="course" type="button"><span class="study-emoji" data-ui-icon="book"></span><strong>Abrir uma disciplina</strong><small>Aulas, tarefas, materiais e discussões por cadeira</small><span class="study-arrow">Abrir central →</span></button>
+<button class="study-tile" data-open="archive" type="button"><span class="study-emoji" data-ui-icon="file"></span><strong>Arquivo acadêmico</strong><small>Histórico da turma: aulas e publicações antigas</small><span class="study-arrow">Ver histórico →</span></button>
+</div>
+</section>
+<section aria-labelledby="tasks-heading" class="view" data-view="tasks" hidden="">
+<button class="text-back" data-open="study" type="button">← Estudos</button>
+<div class="section-title"><h3 id="tasks-heading"> Atividades, prazos e avisos</h3><small>Publicações reais</small></div>
+<p class="page-intro">Acompanhe as publicações das cadeiras em que está inscrito(a). Os andamentos são pessoais; os totais aparecem sem nomes.</p>
+<button class="secondary-btn" data-open="archive" type="button">Consultar publicações antigas</button>
+<button class="secondary-btn" id="planej-atualizar" type="button">↻ Atualizar publicações</button>
+<p aria-live="polite" class="status-result" id="planejamento-erro" role="status"></p>
+<div class="clap13-task-tabs" id="clap13-task-tabs" aria-label="Filtrar atividades"><button type="button" data-state="todas" aria-pressed="true">Fórum</button><button type="button" data-state="pendentes" aria-pressed="false">Pendentes</button><button type="button" data-state="feitas" aria-pressed="false">Concluídas</button></div>
+<p id="clap13-task-explainer" class="secondary clap13-task-explainer">As tarefas ficam organizadas pelo andamento que você registra.</p>
+<section hidden="" id="planej-publicar-box">
+<article class="card planej-card">
+<h4> Publicar ou programar</h4>
+<p class="secondary">Disponível para Administração Geral e editores autorizados. Um aviso pode ser geral ou de uma cadeira.</p>
+<label class="planej-field" for="planej-editar-publicacao">Editar uma publicação existente</label><select class="planej-select" id="planej-editar-publicacao"><option value="">Nova publicação</option></select>
+<form class="planej-form" id="planej-publicar-form">
+<label>Disciplina<select id="planej-publicar-disciplina"><option value="">Geral / toda a turma</option></select></label>
+<label>Tipo<select id="planej-tipo"><option value="atividade">Atividade / trabalho</option><option value="aviso">Aviso / comunicado</option></select></label>
+<label>Título<input id="planej-titulo" maxlength="140" minlength="3" placeholder="Ex.: Lista de exercícios" required=""/></label>
+<label>Descrição<textarea id="planej-conteudo" maxlength="5000" minlength="3" required="" rows="4"></textarea></label>
+<label>Link de material (opcional)<input id="planej-link" placeholder="https://..." type="url"/></label>
+<label>Prazo de entrega (para atividades)<input id="planej-entrega" type="datetime-local"/></label>
+<label>Publicar a partir de<input id="planej-publicar-em" required="" type="datetime-local"/></label>
+<label>Situação<select id="planej-situacao"><option value="publicado">Publicado (respeita a data acima)</option><option value="rascunho">Rascunho privado</option></select></label>
+<button class="primary-btn" type="submit">Salvar publicação</button>
+<button class="secondary-btn" id="planej-publicar-limpar" type="button">Nova / limpar</button>
+</form>
+<p class="status-result" id="planej-publicar-feedback" role="status"></p>
+</article>
+</section>
+<div aria-live="polite" id="planej-publicacoes"><p class="secondary">Carregando…</p></div>
+</section>
+<section aria-labelledby="calendar-heading" class="view" data-view="calendar" hidden="">
+<div class="section-title"><h3 id="calendar-heading"> Calendário</h3><small>Turma e meus compromissos</small></div>
+<p class="page-intro">Escolha entre eventos da turma, privados ou tudo junto. Somente você vê os eventos privados.</p>
+<button type="button" id="clap82-new-event" class="clap82-new-event">＋ Novo compromisso privado</button>
+<button type="button" id="clap82-new-shared" class="secondary-btn clap82-new-shared" hidden>＋ Evento da turma</button>
+<article class="card planej-card">
+<label class="planej-field">Visualizar
+              <select class="planej-select" id="planej-cal-mode">
+<option value="todos">Tudo junto (turma + privados)</option>
+<option value="academico">Somente eventos da turma</option>
+<option value="pessoal">Somente meus compromissos privados</option>
+</select>
+</label>
+<div class="planej-month-nav">
+<button aria-label="Mês anterior" class="cat-small" id="planej-cal-prev" type="button">←</button>
+<strong id="planej-cal-month">Calendário</strong>
+<button aria-label="Próximo mês" class="cat-small" id="planej-cal-next" type="button">→</button>
+</div>
+<button class="cat-small" id="planej-cal-today" type="button">Ir para hoje</button>
+<p class="clap39-calendar-tip">Toque em um dia para ver os compromissos. As cores identificam cada evento; os registros de presença são separados.</p>
+<p class="clap82-legend"><span><i style="background:#2678D4"></i>Da turma</span><span><i style="background:#9B59B6"></i>Privado</span><span><i style="background:#2E9E75"></i>Presença</span></p>
+<div aria-label="Dias do mês" class="planej-calendar-grid" id="planej-cal-grid"></div>
+<div aria-live="polite" class="planej-day-details" id="planej-cal-detail"></div>
+</article>
+<article class="card planej-card clap82-stats" id="clap82-week-stats" aria-label="Estatísticas semanais"></article>
+<article class="card planej-card">
+<h4>Compromisso privado</h4>
+<p class="secondary">Só a sua conta pode ler ou alterar este compromisso.</p>
+<form class="planej-form" id="planej-pessoal-form">
+<input id="planej-pessoal-id" type="hidden"/>
+<label>Título<input id="planej-pessoal-titulo" maxlength="140" minlength="2" placeholder="Ex.: Consulta, aniversário, estudo…" required=""/></label>
+<label>Descrição (opcional)<textarea id="planej-pessoal-descricao" maxlength="2000" rows="2"></textarea></label>
+<label>Cor no calendário<select id="planej-pessoal-cor" class="clap39-color-select" aria-label="Cor do compromisso"><option value="#9B59B6">Roxo</option><option value="#2678D4">Azul</option><option value="#E69722">Amarelo</option><option value="#2F995A">Verde</option><option value="#D95187">Rosa</option><option value="#D76434">Laranja</option></select></label>
+<label>Começa<input id="planej-pessoal-inicio" required="" type="datetime-local"/></label>
+<label>Termina (opcional)<input id="planej-pessoal-fim" type="datetime-local"/></label>
+<button class="primary-btn" type="submit">Salvar compromisso</button>
+<button class="secondary-btn" id="planej-pessoal-limpar" type="button">Limpar campos</button>
+</form>
+<p class="status-result" id="planej-pessoal-feedback" role="status"></p>
+</article>
+<article class="card planej-card" hidden="" id="planej-coletivo-box">
+<h4>Evento da turma</h4>
+<p class="secondary">Somente administradores e editores autorizados podem criar eventos da turma.</p>
+<form class="planej-form" id="planej-coletivo-form">
+<input id="planej-coletivo-id" type="hidden"/>
+<label>Disciplina ou turma toda<select id="planej-coletivo-disciplina"><option value="">Toda a turma</option></select></label>
+<label>Nome do evento<input id="planej-coletivo-titulo" maxlength="140" minlength="3" required=""/></label>
+<label>Descrição<textarea id="planej-coletivo-descricao" maxlength="2000" rows="2"></textarea></label>
+<label>Cor no calendário<select id="planej-coletivo-cor" class="clap39-color-select" aria-label="Cor do compromisso"><option value="#9B59B6">Roxo</option><option value="#2678D4" selected="">Azul</option><option value="#E69722">Amarelo</option><option value="#2F995A">Verde</option><option value="#D95187">Rosa</option><option value="#D76434">Laranja</option></select></label>
+<label>Começa<input id="planej-coletivo-inicio" required="" type="datetime-local"/></label>
+<label>Termina (opcional)<input id="planej-coletivo-fim" type="datetime-local"/></label>
+<button class="primary-btn" type="submit">Salvar evento da turma</button>
+<button class="secondary-btn" id="planej-coletivo-limpar" type="button">Limpar campos</button>
+</form>
+<p class="status-result" id="planej-coletivo-feedback" role="status"></p>
+</article>
+<article class="card"><h4>Minha grade semanal</h4><div id="minha-grade">Carregando…</div></article>
+<article class="card"><h4>Meu diário de presenças</h4><p class="secondary">Só há presença quando você marca “Estou presente”. Ausência de marcação não é falta.</p><div id="minhas-presencas">Carregando…</div></article>
+</section>
+<section aria-labelledby="subjects-heading" class="view" data-view="subjects" hidden="">
+<button class="text-back" data-open="study" type="button">← Estudos</button>
+<div class="section-title"><h3 id="subjects-heading">Minhas cadeiras</h3><small>Catálogo acadêmico</small></div>
+<p class="page-intro">1. Escolha seu período (P1, P2...). 2. Confira o nome do professor. 3. Toque em <strong>Inscrever-me</strong>. Você pode voltar aqui para conferir suas inscrições.</p><p id="clap25-inscription-count" class="clap25-helper" role="status"></p>
+<div aria-label="Períodos disponíveis" class="cat-tabs" id="catalogo-periodos"></div>
+<p aria-live="polite" class="status-result" id="catalogo-feedback"></p>
+<div id="catalogo-disciplinas"><p class="secondary">Carregando disciplinas…</p></div>
+</section>
+<section aria-labelledby="clap20-heading" class="view" data-view="course" hidden>
+<button class="text-back" data-open="subjects" type="button">← Minhas disciplinas</button>
+<div class="section-title"><h3 id="clap20-heading">Central da disciplina</h3></div>
+<p class="page-intro">Escolha um assunto abaixo. Consulte os registros oficiais e as atividades da disciplina, dos mais recentes aos antigos.</p>
+<div class="clap20-panel" id="clap20-panel">
+<label class="clap20-label" for="clap20-course">Disciplina</label><select id="clap20-course" class="clap20-select"></select>
+<p class="secondary" id="clap20-course-meta"></p><button class="clap21-context-help" type="button" data-clap21-help="course">Como funciona esta tela?</button>
+<div id="clap20-empty" hidden><p>Inscreva-se em uma cadeira para consultar seus registros compartilhados. Períodos fechados continuam preservados.</p></div>
+<div id="clap20-content">
+<div class="clap21-home" id="clap21-course-home" aria-label="Escolha o que deseja fazer">
+<p class="clap21-home-lead">O que você procura nesta disciplina?</p>
+<div class="clap21-grid">
+<button type="button" data-tab="aulas"><span aria-hidden="true" data-ui-icon="book"></span><strong>Aulas</strong><small>O que estudamos, por data</small></button>
+<button type="button" data-tab="atividades"><span aria-hidden="true" data-ui-icon="clipboard"></span><strong>Atividades</strong><small>Trabalhos, prazos e tarefas</small></button>
 
-<main>
 
-  <div class="intro">
-    <h2>Bem-vindo ao CLAP!</h2>
+</div>
+<details class="clap21-more-about"><summary>Informações da disciplina</summary><div id="clap21-about-course"></div></details>
+<p class="secondary clap21-history-notice">Quem ingressou depois também pode consultar os registros compartilhados de antes da inscrição. Isso não cria presenças ou faltas retroativas.</p>
+</div>
+<button class="clap21-back" id="clap21-course-back" type="button" hidden>← Voltar às opções da disciplina</button>
+<div class="clap20-tabs" id="clap20-tabs" role="tablist" aria-label="Áreas da disciplina" hidden>
+<button type="button" role="tab" data-tab="aulas" aria-selected="false">Aulas</button>
+<button type="button" role="tab" data-tab="atividades" aria-selected="false">Atividades</button>
 
-    <p>
-      O CLAP é um aplicativo acadêmico
-      colaborativo desenvolvido pela
-      Eclipsona Studios, com recursos
-      de organização de estudos,
-      interação entre estudantes,
-      personalização e recompensas virtuais.
-    </p>
 
-    <p>
-      Esta Política de Privacidade explica
-      quais informações podem ser tratadas,
-      para quais finalidades são utilizadas,
-      como funcionam os serviços de terceiros
-      e quais direitos os usuários possuem.
-    </p>
+</div>
+<details class="clap21-search-tools" id="clap21-search-tools" hidden><summary>Pesquisar e filtrar</summary>
+<form id="clap20-search-form" class="clap20-filter"><label for="clap20-search">Pesquisar no histórico</label><input id="clap20-search" type="search" maxlength="80" placeholder="Título, resumo ou data AAAA-MM-DD"/><button type="submit" class="secondary-btn">Buscar</button><button type="button" id="clap20-refresh" class="secondary-btn">Atualizar</button>
+<label class="clap20-visual" for="clap20-view-select">Visualizar<select id="clap20-view-select"><option value="cards">Cartões</option><option value="lista">Lista compacta</option></select></label></form>
+</details>
+<p id="clap20-status" class="secondary" aria-live="polite"></p>
+<div id="clap20-results" aria-live="polite"></div>
+<button id="clap20-more" class="secondary-btn" type="button" hidden>Carregar mais registros</button>
+</div></div>
+</section>
+<section aria-labelledby="diary-heading" class="view" data-view="diary" hidden="">
+<button class="text-back" data-open="study" type="button">← Estudos</button>
+<div class="section-title"><h3 id="diary-heading">Diário de Aulas</h3></div>
+<section aria-label="Diário de aulas" id="diario-area">
+<div class="section-title"><h3> Diário de Aulas</h3><small>Resumos e materiais</small></div>
+<article class="card diario-card">
+<h4>Registros de aulas</h4>
+<p class="secondary">Resumos aprovados, links de slides e fotos de atividades. Propostas pendentes só aparecem ao autor ou à moderação.</p>
+<p class="clap25-helper">Escolha seu período e a disciplina para consultar os registros. Para enviar contribuições, você precisa estar inscrito(a) na cadeira.</p>
+<div id="clap28-no-enrollment" class="clap28-notice" hidden><strong>Antes de consultar suas aulas…</strong><p>Você precisa se inscrever em pelo menos uma cadeira. Vá a Estudos → Disciplinas, escolha seu período e toque em Inscrever-me.</p><button class="secondary-btn" data-open="subjects" type="button">Escolher disciplinas</button></div><div id="clap25-diario-periodos" class="clap25-periods" role="group" aria-label="Período dos registros"></div><label for="diario-curso">Disciplina e professor(a)</label>
+<select id="diario-curso"></select>
+<button class="secondary-btn" data-open="archive" type="button">Consultar histórico completo</button>
+<button class="secondary-btn" id="diario-recarregar" type="button">Atualizar diário</button>
+<div aria-live="polite" id="diario-lista"><p class="secondary">Carregando…</p></div>
+</article>
+<article class="card diario-card">
+<h4> Sugerir um resumo ou material</h4>
+<p class="secondary">Qualquer aluno inscrito pode colaborar. A publicação depende de aprovação da administração ou de moderador autorizado.</p>
+<p class="secondary" hidden="" id="diario-sem-inscricao">Você precisa se inscrever em alguma cadeira antes de registrar ou enviar uma aula. Vá até Minhas matérias e escolha suas disciplinas.</p>
+<form id="diario-form">
+<label for="diario-enviar-curso">Disciplina e professor(a)</label><select id="diario-enviar-curso" required=""></select>
+<label for="diario-data">Data da aula</label><input id="diario-data" required="" type="date"/>
+<div class="cat-two">
+<div><label for="diario-inicio">Início (opcional)</label><input id="diario-inicio" type="time"/></div>
+<div><label for="diario-fim">Término (opcional)</label><input id="diario-fim" type="time"/></div>
+</div>
+<label for="diario-resumo">O que foi estudado?</label><textarea id="diario-resumo" maxlength="5000" minlength="10" placeholder="Conte, com suas palavras, o que aconteceu na aula…" required=""></textarea>
+<label for="diario-links">Links de materiais (opcional)</label><textarea aria-describedby="diario-links-ajuda" id="diario-links" placeholder="https://classroom.google.com/...
+https://drive.google.com/..." rows="3"></textarea>
+<p class="secondary" id="diario-links-ajuda">Um link HTTPS por linha, até 8. Alguns links exigem matrícula ou acesso no Google Classroom.</p>
+<label for="diario-fotos">Fotos ou imagens da atividade (opcional)</label><input accept="image/jpeg,image/png,image/webp" id="diario-fotos" multiple="" type="file"/>
+<p class="secondary">Até 4 imagens JPG, PNG ou WEBP (5 MB cada), armazenadas de modo privado. Evite fotografar colegas sem autorização.</p>
+<button class="primary-btn" id="diario-enviar" type="submit">Enviar para aprovação</button>
+</form>
+<p aria-live="polite" class="status-result" id="diario-feedback" role="status"></p>
+</article>
+<article class="card diario-card" hidden="" id="diario-moderacao">
+<h4> Contribuições para revisar</h4>
+<p class="secondary">Aprove para disponibilizar aos alunos inscritos ou recuse com uma explicação.</p>
+<p aria-live="polite" class="status-result" id="diario-review-feedback"></p>
+<div id="diario-pendentes"></div>
+</article>
+</section>
+</section>
+<section aria-labelledby="clap19-title" class="view" data-view="archive" hidden="">
+<button class="text-back" data-open="study" type="button">← Estudos</button>
+<div class="section-title"><h3 id="clap19-title">Arquivo acadêmico</h3></div>
+<p class="page-intro">Quem entrou depois também pode consultar o que já foi publicado nas disciplinas em que está inscrito(a). Os registros permanecem por data.</p>
+<div class="clap19-panel">
+<form class="clap19-filters" id="clap19-search-form">
+<label>Tipo de registro<select id="clap19-kind"><option value="aulas">Resumos e aulas</option><option value="publicacoes">Publicações e avisos</option></select></label>
+<label>Disciplina<select id="clap19-course"><option value="">Todas as disciplinas disponíveis</option></select></label>
+<label>Buscar por resumo ou título<input type="search" id="clap19-search" maxlength="85" placeholder="Digite um assunto ou data AAAA-MM-DD" autocomplete="off"/></label>
+<button class="primary-btn" type="submit">Pesquisar no arquivo</button>
+</form>
+<p class="clap19-access-note">Somente materiais publicados e permitidos para suas disciplinas aparecem aqui. Presenças e compromissos privados não são compartilhados.</p>
+<p id="clap19-status" role="status" aria-live="polite"></p>
+<div id="clap19-results" aria-live="polite"></div>
+<button id="clap19-more" class="clap19-button" type="button" hidden>Carregar mais registros</button>
+</div>
+</section>
+<section aria-labelledby="help-heading" class="view" data-view="help" hidden="">
+<div class="section-title"><h3 id="help-heading">Como usar o CLAP</h3></div>
+<button class="primary-btn clap21-guide-start" id="clap21-help-open" type="button">Ver tutorial guiado</button>
+<p class="secondary">Você pode abrir novamente este tutorial no Perfil, quando quiser.</p>
+<p class="page-intro">O CLAP organiza a rotina da sua turma. Aqui estão as explicações que antes ocupavam as outras telas.</p>
+<div class="card app-help"><h4>Início</h4><p>Veja a aula prevista conforme sua grade e, quando estiver dentro do horário, marque ou desmarque sua presença pessoal. O horário previsto não comprova que o professor chegou à sala. Se não marcar, não conta como falta.</p></div>
+<div class="card app-help"><h4>Estudos e disciplinas</h4><p>Em <strong>Atividades e avisos</strong>, acompanhe tarefas, prazos e comentários. Em <strong>Disciplinas</strong>, escolha suas cadeiras, toque em <strong>Abrir central da disciplina</strong> e selecione Aulas, Atividades ou Materiais. O <strong>Diário de Aulas</strong> reúne resumos, slides, links e fotos.</p></div>
+<div class="card app-help"><h4>Agenda</h4><p>Use o calendário acadêmico da turma, sua agenda particular ou os dois juntos. Seus compromissos particulares são privados.</p></div>
+<div class="card app-help"><h4>Turma</h4><p>Veja colegas aprovados que permitem aparecer no diretório. Filtre por disciplina e abra um perfil para visualizar foto, capa e biografia. A contagem de inscritos pode incluir colegas que optaram por ocultar o perfil.</p></div>
+<div class="card app-help"><h4>Perfil e aparência</h4><p>Mude seu apelido, biografia, foto, capa e cor do CLAP. Escolha tema claro ou escuro e quem pode ver seu perfil. Fotos e capas enviadas ao armazenamento público podem ser abertas por quem tiver seus links.</p></div>
+<div class="card app-help"><h4>Períodos fechados</h4><p>O P1 está guardado como histórico e não recebe novas inscrições. Você ainda pode consultar as disciplinas; a Administração Geral pode reabrir um período.</p></div>
 
-    <p>
-      Contato para assuntos de privacidade:
-      <a href="mailto:clapuepb@gmail.com">
-        clapuepb@gmail.com
-      </a>
-    </p>
-  </div>
+<div class="card app-help"><h4>Notificações</h4><p>Avisos automáticos com o aplicativo fechado ainda precisam de uma integração Android específica. Registrar horários e preferências no painel não ativa essas notificações por si só.</p></div>
+<button class="secondary-btn" data-open="home" type="button">Voltar ao Início</button><div class="card app-help"><h4>Emblemas e molduras</h4><p>Emblemas aparecem quando você participa do CLAP e cumpra condições reais, verificadas no banco. Você pode escolher até três para seu perfil. Você pode escolher uma moldura com brilho no Perfil.</p></div>
+</section>
+<section aria-labelledby="community-heading" class="view" data-view="community" hidden="">
+<div class="section-title"><h3 id="community-heading">Nossa turma</h3><small>Membros do CLAP</small></div>
+<p class="page-intro">Pessoas da turma, inscrições por disciplina e perfis.</p>
+<div class="card">
+<label class="mini-label" for="membros-filtro">Mostrar colegas de</label>
+<select class="cat-select" id="membros-filtro"><option value="">Todas as disciplinas</option></select>
+<label class="mini-label" for="membros-busca">Buscar pelo apelido</label>
+<input class="community-input" id="membros-busca" maxlength="60" placeholder="Buscar colegas…"/>
+<p class="secondary" id="membros-total" role="status">Carregando colegas…</p>
+</div>
+<div id="membros-lista"></div>
+<div hidden="" id="membros-detalhe"></div>
+</section>
+<section aria-labelledby="clap-games-heading" class="view" data-view="games" hidden>
+ <button class="text-back" data-open="study" type="button">← Estudos</button>
+ <div class="section-title"><h3 id="clap-games-heading" tabindex="-1">Jogos e desafios</h3><small>Aprenda jogando</small></div>
+ <p class="page-intro">Escolha uma atividade para abrir uma tela própria. Use as disciplinas para revisar conteúdos da turma.</p>
+ <div class="clap84-game-grid" aria-label="Escolher jogo">
+  <button type="button" class="clap84-game-card" data-open="game-typing"><span data-ui-icon="edit"></span><strong>Digitação relâmpago</strong><small>Frases dos slides e três dificuldades.</small><span class="clap84-link">Jogar →</span></button>
+  <button type="button" class="clap84-game-card" data-open="game-math"><span data-ui-icon="clipboard"></span><strong>Desafio da tabuada</strong><small>Fácil, médio e difícil.</small><span class="clap84-link">Jogar →</span></button>
+  <button type="button" class="clap84-game-card" data-open="game-quiz"><span data-ui-icon="help"></span><strong>Show de perguntas</strong><small>Uma provinha com alternativas, por disciplina.</small><span class="clap84-link">Responder →</span></button>
+  <button type="button" class="clap84-game-card" data-open="game-flashcards"><span data-ui-icon="layers"></span><strong>Flashcards</strong><small>Vire os cartões e revise no seu ritmo.</small><span class="clap84-link">Estudar →</span></button>
+ </div>
+ <p id="clap-game-feedback" class="status-result" role="status" aria-live="polite"></p>
+ <section class="card clap-game-scoreboard" aria-labelledby="clap-game-ranking-title">
+  <div class="clap-game-score-title"><h4 id="clap-game-ranking-title">Rankings desta semana</h4><button type="button" id="clap-game-refresh" class="cat-small">Atualizar</button></div>
+  <p class="secondary">Cada modalidade tem seu próprio ranking semanal, com as três melhores partidas. Os flashcards são estudo, sem pontuação.</p>
+  <label class="clap-game-consent"><input type="checkbox" id="clap-game-optin"> <span>Quero aparecer com minha foto e apelido no ranking público da turma.</span></label>
+  <p id="clap-game-consent-status" role="status" aria-live="polite">A escolha só é salva quando o ranking estiver configurado no Supabase.</p>
+  <h5 class="clap86-rank-title">Digitação Relâmpago</h5>
+  <ol id="clap86-ranking-typing" class="clap-game-leaderboard"><li>Carregando digitação…</li></ol>
+  <h5 class="clap86-rank-title">Desafio da Tabuada</h5>
+  <ol id="clap86-ranking-math" class="clap-game-leaderboard"><li>Carregando tabuada…</li></ol>
+ </section>
+ <section class="card" aria-labelledby="clap-game-badges-title"><h4 id="clap-game-badges-title">Conquistas dos jogos</h4><div id="clap-game-achievements" class="clap-game-achievements"></div></section>
+</section>
+<section class="view" data-view="game-typing" aria-labelledby="clap84-typing-head" hidden>
+ <button class="text-back" data-open="games" type="button">← Todos os jogos</button>
+ <div class="section-title"><h3 id="clap84-typing-head" tabindex="-1">Digitação relâmpago</h3><small>Velocidade e precisão</small></div>
+ <div class="card clap84-game-settings" id="clap84-settings-typing">
+  <p class="secondary">Escolha o nível e a disciplina. A primeira frase e o teclado ficam prontos antes da contagem. Digite quantas frases conseguir até o tempo acabar.</p>
+  <label for="clap84-typing-difficulty">Dificuldade</label>
+  <select id="clap84-typing-difficulty"><option value="easy">Fácil · frases curtas</option><option value="medium" selected>Médio · frases médias</option><option value="hard">Difícil · frases longas</option></select>
+  <label for="clap84-typing-course">Disciplina</label><select id="clap84-typing-course"><option value="">Geral · frases do CLAP</option></select>
+  <button class="primary-btn" id="clap84-start-typing" type="button">Preparar teclado e começar</button>
+ </div>
+ <section class="card clap84-game-play" id="clap84-play-typing" hidden aria-label="Partida de digitação">
+  <div class="clap84-game-top"><strong id="clap84-round-title-typing">Digitação</strong><b id="clap84-timer-typing" class="clap84-timer">--:--</b></div>
+  <p id="clap84-counter-typing" class="secondary"></p><p id="clap84-countdown-typing" class="clap84-countdown" role="status" aria-live="assertive"></p>
+  <p id="clap85-typing-progress" class="secondary">0 frases concluídas</p><p id="clap84-question-typing" class="clap-game-question" aria-label="Frase para digitar"></p>
+  <form id="clap84-form-typing" autocomplete="off"><label for="clap84-input-typing">Digite aqui — a próxima frase aparece automaticamente ao acertar</label><textarea id="clap84-input-typing" rows="2" maxlength="400" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" disabled></textarea><p id="clap85-typing-feedback" class="clap85-typing-feedback" role="status"></p><button type="submit" class="clap85-hidden-submit" tabindex="-1" aria-hidden="true">Próxima frase</button></form>
+  <p id="clap84-result-typing" class="clap84-result" role="status" aria-live="polite"></p>
+  <button type="button" id="clap84-exit-typing" class="secondary-btn">Voltar às opções</button>
+ </section>
+</section>
+<section class="view" data-view="game-math" aria-labelledby="clap84-math-head" hidden>
+ <button class="text-back" data-open="games" type="button">← Todos os jogos</button>
+ <div class="section-title"><h3 id="clap84-math-head" tabindex="-1">Desafio da tabuada</h3><small>Multiplicação cronometrada</small></div>
+ <div class="card clap84-game-settings" id="clap84-settings-math"><label for="clap84-math-difficulty">Dificuldade</label>
+  <select id="clap84-math-difficulty"><option value="easy">Fácil · tabuadas até 5</option><option value="medium" selected>Médio · tabuadas até 12</option><option value="hard">Difícil · tabuadas até 20</option></select>
+  <button class="primary-btn" id="clap84-start-math" type="button">Começar desafio</button>
+ </div>
+ <section class="card clap84-game-play" id="clap84-play-math" hidden aria-label="Partida de tabuada">
+  <div class="clap84-game-top"><strong id="clap84-round-title-math">Tabuada</strong><b id="clap84-timer-math" class="clap84-timer">--:--</b></div>
+  <p id="clap84-counter-math" class="secondary"></p><p id="clap84-countdown-math" class="clap84-countdown" role="status" aria-live="assertive"></p>
+  <p id="clap84-question-math" class="clap-game-question" aria-live="polite"></p>
+  <div id="clap84-answers-math" class="clap84-quiz-answers clap85-math-answers" role="group" aria-label="Quatro alternativas da tabuada"></div><p id="clap85-math-feedback" class="clap85-math-feedback" role="status" aria-live="polite"></p>
+  <p id="clap84-result-math" class="clap84-result" role="status" aria-live="polite"></p>
+  <button type="button" id="clap84-exit-math" class="secondary-btn">Voltar às opções</button>
+ </section>
+</section>
+<section class="view" data-view="game-quiz" aria-labelledby="clap84-quiz-head" hidden>
+ <button class="text-back" data-open="games" type="button">← Todos os jogos</button>
+ <div class="section-title"><h3 id="clap84-quiz-head" tabindex="-1">Show de perguntas</h3><small>Escolha a resposta certa</small></div>
+ <div class="card clap84-game-settings" id="clap84-settings-quiz"><p class="secondary">As questões são criadas pela administração. Você escolhe a disciplina e a dificuldade.</p>
+  <label for="clap84-quiz-course">Disciplina</label><select id="clap84-quiz-course"><option value="">Todas as disciplinas</option></select>
+  <label for="clap84-quiz-difficulty">Dificuldade</label><select id="clap84-quiz-difficulty"><option value="easy">Fácil</option><option value="medium" selected>Médio</option><option value="hard">Difícil</option></select>
+  <button class="primary-btn" id="clap84-start-quiz" type="button">Iniciar provinha</button>
+ </div>
+ <section class="card clap84-game-play" id="clap84-play-quiz" hidden aria-label="Provinha de perguntas">
+  <div class="clap84-game-top"><strong id="clap84-round-title-quiz">Quiz</strong><b id="clap84-timer-quiz" class="clap84-timer">--:--</b></div>
+  <p id="clap84-counter-quiz" class="secondary"></p><p id="clap84-countdown-quiz" class="clap84-countdown" role="status" aria-live="assertive"></p>
+  <p id="clap84-question-quiz" class="clap-game-question" aria-live="polite"></p>
+  <div id="clap84-answers-quiz" class="clap84-quiz-answers" role="group" aria-label="Alternativas da questão"></div>
+  <p id="clap84-result-quiz" class="clap84-result" role="status" aria-live="polite"></p>
+  <button type="button" id="clap84-exit-quiz" class="secondary-btn">Voltar às opções</button>
+ </section>
+</section>
+<section class="view" data-view="game-flashcards" aria-labelledby="clap84-flash-head" hidden>
+ <button class="text-back" data-open="games" type="button">← Todos os jogos</button>
+ <div class="section-title"><h3 id="clap84-flash-head" tabindex="-1">Flashcards</h3><small>Revisão sem cronômetro</small></div>
+ <div class="card clap84-game-settings"><label for="clap84-flash-course">Escolha a disciplina</label><select id="clap84-flash-course"><option value="">Todas as disciplinas</option></select><button id="clap84-flash-load" type="button" class="primary-btn">Abrir cartões</button></div>
+ <section class="card" id="clap84-flash-panel" hidden><p id="clap84-flash-count" class="secondary"></p>
+  <button id="clap84-flash-card" type="button" class="clap84-flash-card" aria-label="Revelar resposta do cartão"><span id="clap84-flash-face"></span><small>Toque para virar o cartão</small></button>
+  <div class="clap84-flash-actions"><button type="button" id="clap84-flash-prev" class="secondary-btn">← Anterior</button><button type="button" id="clap84-flash-next" class="primary-btn">Próximo →</button></div>
+ </section><p id="clap84-flash-status" class="status-result" role="status" aria-live="polite"></p>
+</section>
+<section class="view" data-view="game-editor" aria-labelledby="clap84-editor-head" hidden>
+ <button class="text-back" data-open="admin" type="button">← CLAP Admin</button>
+ <div class="section-title"><h3 id="clap84-editor-head" tabindex="-1">Gerenciar desafios</h3><small>Administração</small></div>
+ <p class="page-intro">Cadastre conteúdos dos slides sem alterar código. Apenas administradores podem publicar, editar ou arquivar.</p>
+ <form id="clap84-editor-form" class="card clap84-editor-form" autocomplete="off">
+  <input type="hidden" id="clap84-editor-id" value="">
+  <label for="clap84-editor-type">Tipo de conteúdo</label><select id="clap84-editor-type"><option value="typing">Frase para digitação</option><option value="quiz">Pergunta de múltipla escolha</option><option value="flashcard">Flashcard</option></select>
+  <label for="clap84-editor-course">Disciplina</label><select id="clap84-editor-course"><option value="">Geral / sem disciplina</option></select>
+  <label for="clap89-editor-folder">Pasta / material</label><select id="clap89-editor-folder"><option value="">Sem pasta</option></select><label for="clap84-editor-level">Dificuldade</label><select id="clap84-editor-level"><option value="easy">Fácil</option><option value="medium" selected>Médio</option><option value="hard">Difícil</option></select>
+  <label for="clap84-editor-prompt" id="clap84-editor-prompt-label">Frase que será digitada</label><textarea id="clap84-editor-prompt" rows="3" maxlength="400" required></textarea>
+  <div id="clap84-editor-answer-wrap" hidden><label for="clap84-editor-answer" id="clap84-editor-answer-label">Verso do cartão</label><textarea id="clap84-editor-answer" rows="3" maxlength="500"></textarea></div>
+  <fieldset id="clap84-editor-quiz-wrap" hidden class="clap84-editor-options"><legend>Alternativas da questão</legend>
+   <label for="clap84-option-0">Opção A</label><input id="clap84-option-0" maxlength="180">
+   <label for="clap84-option-1">Opção B</label><input id="clap84-option-1" maxlength="180">
+   <label for="clap84-option-2">Opção C</label><input id="clap84-option-2" maxlength="180">
+   <label for="clap84-option-3">Opção D</label><input id="clap84-option-3" maxlength="180">
+   <label for="clap84-editor-correct">Alternativa correta</label><select id="clap84-editor-correct"><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select>
+  </fieldset>
+  <label class="clap84-check"><input id="clap84-editor-published" type="checkbox" checked> Publicar para a turma</label>
+  <button type="submit" class="primary-btn" id="clap84-editor-save">Salvar conteúdo</button><button type="button" class="secondary-btn" id="clap84-editor-clear">Criar novo</button>
+  <p id="clap84-editor-status" class="status-result" role="status" aria-live="polite"></p>
+ </form>
+ <section class="card clap89-folders" aria-label="Pastas dos jogos"><h4>Pastas de conteúdos</h4><p class="secondary">Organize frases, perguntas e flashcards em Slide 1, Revisão e outras pastas. Você pode editar ou excluir pastas sem apagar os conteúdos.</p><form id="clap89-folder-form"><input type="hidden" id="clap89-folder-id"><label for="clap89-folder-title">Nome da pasta</label><input id="clap89-folder-title" maxlength="80" required placeholder="Ex.: Slide 1"><label for="clap89-folder-discipline">Disciplina da pasta</label><select id="clap89-folder-discipline"><option value="">Geral · todas</option></select><button type="submit" class="primary-btn">Salvar pasta</button><button type="button" class="secondary-btn" id="clap89-folder-clear">Nova pasta</button></form><p class="status-result" id="clap89-folder-status" aria-live="polite"></p><div id="clap89-folder-list"></div></section>
+ <section class="card"><h4>Conteúdos cadastrados</h4><label for="clap89-filter-folder">Filtrar por pasta</label><select id="clap89-filter-folder"><option value="all">Todas as pastas</option><option value="">Sem pasta</option></select><button type="button" class="cat-small" id="clap84-editor-refresh">Atualizar lista</button><div id="clap84-editor-list" class="clap84-editor-list"></div></section>
+</section>
+<section aria-labelledby="profile-heading" class="view" data-view="profile" hidden="">
+<div class="section-title"><h3 id="profile-heading">Meu perfil</h3></div>
+<button class="clap21-profile-help" id="clap21-profile-help" type="button">Como usar o CLAP? · Tutorial</button>
+<div class="card profile-display"><div aria-label="Capa personalizada do perfil" class="profile-banner" id="profile-banner" role="img"></div>
+<div class="profile-card-content"><div aria-label="Foto de perfil" class="avatar" id="profile-avatar">CL</div>
+<h4 class="empty-heading" id="profile-name">Seu espaço no CLAP</h4><p class="secondary" id="profile-description">Entre na sua conta para configurar seu perfil.</p><div class="featured-badges" id="profile-featured"></div><div class="clap-game-profile-badges" id="clap-game-profile-badges" aria-label="Conquistas de jogos"></div></div></div>
+<details class="profile-accordion" id="panel-profile-appearance"><summary><span>Aparência do aplicativo</span><span class="accordion-meta"><small>Tema, cores e modo escuro</small></span></summary><div class="card" id="profile-appearance">
+<label for="profile-mode">Modo da tela</label><select class="cat-select" id="profile-mode"><option value="claro">Claro</option><option value="escuro">Escuro</option></select>
+<label for="profile-color">Cor principal</label><select class="cat-select" id="profile-color"><option value="grafite">Grafite</option><option value="azul">Azul</option><option value="verde">Verde</option><option value="rosa">Rosa</option><option value="laranja">Terracota</option><option value="roxo">Roxo · identidade CLAP</option></select>
+<p class="status-result" id="profile-theme-feedback" role="status"></p>
+</div></details><details class="profile-accordion" id="panel-profile-identidade"><summary><span>Emblemas e molduras</span><span class="accordion-meta"><small>Suas conquistas e itens em destaque</small></span></summary><div class="card" id="profile-identidade">
+<label for="moldura-select">Moldura da foto</label>
+<select class="cat-select" id="moldura-select">
+<option value="nenhuma">Sem moldura</option><option value="minimal">Minimalista</option>
+<option value="aura">Aura</option><option value="cromo">Cromo</option>
+<option value="aurora">Aurora</option><option value="estelar">Estelar</option><option value="fogos">Fogos de artifício</option><option value="celeste">Celeste de anjo</option><option value="constelacao">Constelação</option>
 
-  <section>
-    <h2>01. Informações utilizadas</h2>
+</select>
+<p class="status-result" id="moldura-feedback" role="status"></p>
+<div class="card-section-heading" style="margin-top:18px"><h4>Emblemas conquistados</h4><span class="mini-label">Até 3 em destaque</span></div>
+<div class="achievement-grid" id="conquistas-grid"></div>
+<p class="status-result" id="conquistas-feedback" role="status"></p>
 
-    <p>
-      Conforme os recursos utilizados,
-      o CLAP pode tratar:
-    </p>
+</div></details>
+<div class="card" hidden="" id="admin-entry">
+<span class="mini-label">Acesso restrito</span>
+<h4 class="empty-heading" style="margin-top:10px"> CLAP Admin</h4>
+<p class="secondary">Gerencie solicitações de acesso e decida quem pode entrar na turma.</p>
+<button class="primary-btn" id="admin-open" type="button">Abrir painel administrativo</button>
+</div>
+<details class="profile-accordion" id="panel-profile-activity"><summary><span>Minha atividade</span><span class="accordion-meta"><small>Comentários e materiais publicados</small></span></summary><div class="card"><div class="profile-activity" id="profile-own-activity"><p class="secondary">Abra esta seção para carregar suas contribuições.</p></div></div></details><details class="profile-accordion" id="panel-profile-editor"><summary><span>Editar meu perfil</span><span class="accordion-meta"><small>Nome, biografia e fotos</small></span></summary><div class="card" hidden="" id="profile-editor">
+<form class="auth-form" id="profile-form">
+<label for="nickname-field">Meu apelido</label>
+<input autocomplete="nickname" id="nickname-field" maxlength="32" minlength="2" name="nickname" required=""/>
+<label for="bio-field">Minha biografia (opcional)</label>
+<textarea id="bio-field" maxlength="280" name="bio" placeholder="Conte um pouquinho sobre você" rows="3"></textarea>
+<button class="primary-btn" type="submit">Salvar apelido e biografia</button>
+</form>
+<p aria-live="polite" class="note" id="profile-message" role="status"></p>
+<div class="profile-files">
+<label for="profile-avatar-file">Foto de perfil</label><input accept="image/jpeg,image/png,image/webp" id="profile-avatar-file" type="file"/>
+<label for="profile-banner-file">Capa do perfil (horizontal)</label><input accept="image/jpeg,image/png,image/webp" id="profile-banner-file" type="file"/>
+<p class="status-result" id="profile-media-feedback" role="status"></p>
+<p class="secondary">Arquivos JPG, PNG ou WEBP, até 5 MB. Capa recomendada: imagem horizontal de 1600 × 600 pixels. Fotos públicas podem ser vistas por quem tiver o link.</p>
+</div>
+<div class="cat-privacy"><label><input id="profile-public" type="checkbox"/> Exibir meu perfil para os colegas no diretório da Turma</label>
+<p class="status-result" id="profile-public-feedback" role="status"></p></div>
+<div class="cat-privacy"><label><input id="presenca-privacidade" type="checkbox"/> Mostrar meu apelido e foto para colegas inscritos na lista de presença</label>
+<p aria-live="polite" class="status-result" id="privacidade-feedback" role="status"></p>
+<p class="secondary">Mesmo desativada, sua presença pode ser incluída na contagem total sem identificar você.</p></div>
+</div></details>
+<section class="clap17-profile-actions" aria-label="Atalhos do perfil">
 
-    <ul>
-      <li>
-        Dados de cadastro, como e-mail,
-        identificador de conta e informações
-        necessárias à autenticação.
-      </li>
-      <li>
-        Apelido, nome de exibição,
-        foto de perfil, capa e biografia.
-      </li>
-      <li>
-        Informações acadêmicas,
-        disciplinas, atividades,
-        calendário e registros de presença.
-      </li>
-      <li>
-        Publicações, comentários,
-        mensagens, reações e arquivos enviados.
-      </li>
-      <li>
-        Preferências de personalização,
-        personagens, molduras e emblemas.
-      </li>
-      <li>
-        Saldo e histórico de gemas,
-        check-ins, recompensas e resgates.
-      </li>
-      <li>
-        Dados técnicos necessários ao
-        funcionamento, à segurança e,
-        quando ativados, aos anúncios.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>02. Como utilizamos os dados</h2>
-
-    <p>
-      As informações podem ser utilizadas para:
-    </p>
-
-    <ul>
-      <li>Autenticar e administrar contas.</li>
-      <li>Organizar recursos acadêmicos.</li>
-      <li>Disponibilizar fóruns e mensagens.</li>
-      <li>Personalizar perfis e personagens.</li>
-      <li>Administrar a Loja e as gemas.</li>
-      <li>Prevenir fraudes e abusos.</li>
-      <li>Moderar conteúdos e oferecer suporte.</li>
-      <li>
-        Exibir publicidade e verificar
-        recompensas quando esse recurso
-        estiver habilitado.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>03. Armazenamento e Supabase</h2>
-
-    <p>
-      O CLAP utiliza o Supabase para
-      serviços como autenticação,
-      armazenamento de informações,
-      banco de dados e arquivos.
-    </p>
-
-    <p>
-      O acesso aos dados depende das
-      permissões e das regras de segurança
-      configuradas no aplicativo.
-    </p>
-
-    <p>
-      O conteúdo compartilhado em áreas
-      sociais pode ficar visível aos usuários
-      autorizados. Dados privados não são
-      destinados à exibição pública.
-    </p>
-
-    <p>
-      Arquivos hospedados em áreas públicas
-      podem ser acessados por pessoas que
-      tenham seus respectivos links.
-    </p>
-
-    <p>
-      Informações sobre o fornecedor:
-      <a href="https://supabase.com/privacy"
-         target="_blank" rel="noopener">
-        Política de Privacidade do Supabase
-      </a>.
-    </p>
-  </section>
-
-  <section>
-    <h2>04. Google AdMob e anúncios</h2>
-
-    <p>
-      O CLAP prevê a utilização do
-      Google AdMob para monetização
-      por meio de publicidade.
-    </p>
-
-    <p>
-      Quando ativado, o serviço pode
-      processar informações técnicas,
-      como identificadores publicitários,
-      endereço IP, dados do dispositivo,
-      interações com anúncios e
-      preferências de consentimento.
-    </p>
-
-    <p>
-      O tratamento realizado pelo Google
-      e seus parceiros depende das
-      configurações aplicáveis, das
-      permissões e das escolhas de
-      privacidade do usuário.
-    </p>
-
-    <p>
-      O CLAP também pode oferecer
-      anúncios recompensados opcionais.
-      Quando uma visualização é validada,
-      o usuário elegível pode receber
-      gemas virtuais.
-    </p>
-
-    <p>
-      As gemas são unidades internas
-      do aplicativo e não representam
-      dinheiro real.
-    </p>
-
-    <p>
-      Saiba mais:
-      <a href="https://policies.google.com/privacy"
-         target="_blank" rel="noopener">
-        Política de Privacidade do Google
-      </a>.
-    </p>
-
-    <div class="notice">
-      Os anúncios recompensados são
-      opcionais. O uso dos recursos
-      acadêmicos não deve depender
-      da visualização de publicidade.
-    </div>
-  </section>
-
-  <section>
-    <h2>05. Loja e recompensas</h2>
-
-    <p>
-      A Loja do CLAP oferece itens
-      de personalização, como personagens,
-      molduras, contornos, emblemas
-      e pacotes digitais.
-    </p>
-
-    <p>
-      Para administrar esses recursos,
-      podem ser registrados saldo,
-      histórico de movimentações,
-      itens adquiridos e recompensas.
-    </p>
-
-    <p>
-      O CLAP pode disponibilizar gemas
-      por check-ins, atividades,
-      eventos e anúncios opcionais.
-    </p>
-
-    <p>
-      As gemas não podem ser
-      convertidas diretamente
-      em dinheiro pelo usuário.
-    </p>
-  </section>
-
-  <section>
-    <h2>06. Segurança e compartilhamento</h2>
-
-    <p>
-      O aplicativo utiliza mecanismos
-      de autenticação e controles de
-      acesso para proteger informações.
-    </p>
-
-    <p>
-      Prestadores de serviços necessários
-      ao funcionamento, como Supabase
-      e Google, podem tratar dados
-      conforme suas respectivas funções.
-    </p>
-
-    <p>
-      Determinadas operações podem envolver
-      armazenamento ou processamento
-      de informações fora do Brasil,
-      conforme os fornecedores utilizados.
-    </p>
-
-    <p>
-      Nenhuma medida de segurança elimina
-      completamente os riscos.
-      Por isso, o usuário deve proteger
-      suas credenciais de acesso.
-    </p>
-  </section>
-
-  <section>
-    <h2>07. Direitos do usuário</h2>
-
-    <p>
-      Conforme a Lei Geral de Proteção
-      de Dados Pessoais (LGPD),
-      o usuário pode solicitar,
-      quando aplicável:
-    </p>
-
-    <ul>
-      <li>Confirmação do tratamento de dados.</li>
-      <li>Acesso às informações pessoais.</li>
-      <li>Correção de dados incorretos.</li>
-      <li>Informações sobre compartilhamento.</li>
-      <li>
-        Exclusão ou anonimização
-        nos casos previstos em lei.
-      </li>
-      <li>
-        Informações sobre consentimento
-        e sua eventual revogação.
-      </li>
-    </ul>
-
-    <p>
-      Para solicitar atendimento,
-      escreva para:
-      <a href="mailto:clapuepb@gmail.com">
-        clapuepb@gmail.com
-      </a>.
-    </p>
-  </section>
-
-  <section>
-    <h2>08. Exclusão da conta</h2>
-
-    <p>
-      O usuário pode solicitar a
-      exclusão de sua conta e dos
-      dados pessoais associados pelo
-      canal de suporte.
-    </p>
-
-    <p>
-      A solicitação será analisada
-      considerando os dados vinculados
-      à conta e as eventuais obrigações
-      legais de retenção.
-    </p>
-
-    <p>
-      A desativação temporária da conta
-      não equivale necessariamente
-      à exclusão definitiva dos dados.
-    </p>
-
-    <p>
-      Solicitações:
-      <a href="mailto:clapuepb@gmail.com?subject=Exclusao%20de%20conta%20CLAP">
-        Solicitar exclusão de conta
-      </a>.
-    </p>
-  </section>
-
-  <section>
-    <h2>09. Retenção e atualizações</h2>
-
-    <p>
-      As informações são mantidas
-      conforme a necessidade das
-      funcionalidades, a finalidade do
-      tratamento e as obrigações
-      legais aplicáveis.
-    </p>
-
-    <p>
-      Esta política poderá ser
-      atualizada quando forem
-      introduzidas novas funcionalidades,
-      serviços ou práticas de
-      tratamento de dados.
-    </p>
-
-    <p>
-      A data da versão atual será
-      informada nesta página.
-    </p>
-  </section>
-
-  <section>
-    <h2>10. Contato</h2>
-
-    <p>
-      <strong>Aplicativo:</strong>
-      CLAP — Central de Lançamentos,
-      Atividades e Prazos.
-    </p>
-
-    <p>
-      <strong>Desenvolvimento:</strong>
-      Eclipsona Studios.
-    </p>
-
-    <p>
-      <strong>Contato de suporte:</strong>
-      <a href="mailto:clapuepb@gmail.com">
-        clapuepb@gmail.com
-      </a>
-    </p>
-  </section>
-
-</main>
-
-<footer>
-  <strong>✦ ECLIPSONA STUDIOS ✦</strong>
-  CLAP — Central de Lançamentos,
-  Atividades e Prazos
-  <p>© 2026 Eclipsona Studios</p>
+<button class="secondary-btn clap17-logout" id="sign-out" type="button">Sair da conta</button>
+</section>
+<section class="clap69-privacy-access"><a href="https://clapuepb-commits.github.io/clap-privacidade/" target="_blank" rel="noopener">Política de Privacidade</a> <span aria-hidden="true">·</span> <a href="mailto:clapuepb@gmail.com?subject=Privacidade%20CLAP">Falar com suporte</a></section><footer class="clap44-support" aria-label="Suporte e informações do aplicativo">
+  <a class="clap44-support-link" href="mailto:clapuepb@gmail.com?subject=CLAP%20%E2%80%94%20Relato%20de%20problema">Reportar um problema · clapuepb@gmail.com</a>
+  <small>CLAP · Projeto em testes</small>
+  <small>Desenvolvimento: Projeto CLAP</small>
 </footer>
+<button class="secondary-btn" id="profile-login" type="button">Entrar na minha conta</button>
+</section>
+<section aria-labelledby="admin-heading" class="view" data-view="admin" hidden="">
+<div class="section-title"><h3 id="admin-heading"> CLAP Admin</h3><small>Somente administração</small></div>
+<p class="page-intro">Gerencie pessoas, disciplinas, horários e permissões. Tudo fica aqui, separado das telas dos estudantes.</p>
+<div class="card">
+<button class="primary-btn" id="admin-refresh" type="button">Atualizar solicitações</button>
+<p aria-live="polite" class="status-result" id="admin-feedback" role="status"></p>
+</div>
+<section class="card clap86-admin-games" aria-labelledby="clap86-admin-games-title">
+ <div class="clap86-admin-games-head"><span class="clap86-admin-games-icon" data-ui-icon="gamepad" aria-hidden="true"></span><div><h4 id="clap86-admin-games-title">Jogos</h4><p class="secondary">Gerencie as frases da digitação, perguntas das provinhas e flashcards por disciplina.</p></div></div>
+ <button type="button" class="primary-btn" id="clap86-admin-games-open" data-open="game-editor">Gerenciar conteúdo dos jogos</button>
+ <p class="secondary">Cadastre, edite, publique e arquive os desafios sem mexer no código.</p>
+</section>
+<div aria-live="polite" id="admin-list"></div>
 
+<section aria-label="Administração de disciplinas" hidden="" id="catalogo-admin">
+<div class="section-title"><h3> Períodos e disciplinas</h3><small>Editar sem código</small></div>
+<div class="card">
+<h4>Gerenciar períodos</h4>
+<form class="cat-admin-form" id="admin-periodo-form">
+<label for="admin-periodo-novo">Criar período (ex.: P3)</label><input id="admin-periodo-novo" maxlength="40" minlength="2" placeholder="P3" required=""/>
+<label for="admin-periodo-ordem">Ordem de exibição</label><input id="admin-periodo-ordem" max="99" min="1" type="number" value="3"/>
+<button class="primary-btn" type="submit">Criar período</button>
+</form>
+<label for="admin-periodo">Período para o cadastro e para tornar atual</label>
+<select class="cat-select" id="admin-periodo"></select>
+<button class="secondary-btn" id="admin-periodo-ativar" type="button">Definir como período atual</button>
+<div class="cat-privacy">
+<label><input id="admin-periodo-aberto" type="checkbox"/> Aceitar novas inscrições neste período</label>
+<p class="secondary" id="admin-periodo-historia">Desmarcado = período fechado/histórico. As inscrições antigas não são apagadas.</p>
+<button class="secondary-btn" id="admin-periodo-salvar-acesso" type="button">Salvar situação do período</button>
+</div>
+</div>
+<div class="card">
+<h4>Cadastrar ou editar disciplina</h4>
+<label for="admin-disciplina-editar">Selecione a disciplina existente, ou escolha Nova</label>
+<select class="cat-select" id="admin-disciplina-editar"></select>
+<form class="cat-admin-form" id="admin-disciplina-form">
+<label for="admin-nome">Nome da cadeira</label><input id="admin-nome" maxlength="200" placeholder="Ex.: Metodologia Científica" required=""/>
+<label for="admin-codigo">Código SUAP ou código interno</label><input id="admin-codigo" maxlength="50" placeholder="Ex.: GRAD.03472" required=""/>
+<label for="admin-docente">Professor(a)</label><input id="admin-docente" placeholder="Nome do docente"/>
+<label for="admin-sala">Sala e local</label><input id="admin-sala" placeholder="Sala 05, Bloco B"/>
+<label for="admin-semestre">Oferta / semestre</label><input id="admin-semestre" placeholder="Ex.: 2027.1"/>
+<label for="admin-suap">Link da disciplina (opcional)</label><input id="admin-suap" placeholder="https://..." type="url"/>
+<label for="admin-foto-docente">Link da foto do docente (opcional)</label><input id="admin-foto-docente" placeholder="https://..." type="url"/>
+<button class="primary-btn" type="submit">Salvar disciplina</button>
+</form>
+</div>
+<div class="card">
+<h4>Horários e preferência de avisos</h4>
+<p class="secondary">Os avisos dependem das permissões do celular e da configuração do serviço de notificações. Confira nas Configurações.</p>
+<form class="cat-admin-form" id="admin-horario-form">
+<input id="admin-horario-id" type="hidden"/>
+<label for="admin-horario-disciplina">Disciplina</label><select class="cat-select" id="admin-horario-disciplina" required=""></select>
+<label for="admin-horario-dia">Dia</label><select class="cat-select" id="admin-horario-dia"><option value="1">Segunda</option><option value="2">Terça</option><option value="3">Quarta</option><option value="4">Quinta</option><option value="5">Sexta</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+<div class="cat-two"><div><label for="admin-horario-inicio">Começa</label><input id="admin-horario-inicio" required="" type="time" value="08:00"/></div>
+<div><label for="admin-horario-fim">Termina</label><input id="admin-horario-fim" required="" type="time" value="12:00"/></div></div>
+<label class="cat-check"><input checked="" id="admin-aviso-ativo" type="checkbox"/> Aviso de início habilitado (para futura integração)</label>
+<label for="admin-aviso-minutos">Antecedência desejada, em minutos</label><input id="admin-aviso-minutos" max="120" min="0" type="number" value="0"/>
+<button class="primary-btn" type="submit">Salvar horário</button>
+<button class="secondary-btn" id="admin-horario-limpar" type="button">Novo horário / limpar formulário</button>
+</form>
+</div>
+<p aria-live="polite" class="status-result" id="admin-catalogo-feedback"></p>
+<div class="section-title"><h3>Disciplinas cadastradas</h3></div>
+<div id="admin-grade-list"></div>
+</section>
+<article class="card diario-card" hidden="" id="diario-admin-moderadores">
+<h4> Moderadores do Diário de Aulas</h4>
+<p class="secondary">Escolha um aluno aprovado e conceda ou retire apenas a permissão de aprovar resumos e materiais. Isso não concede acesso à Administração Geral.</p>
+<label for="diario-moderador-usuario">Aluno aprovado</label>
+<select id="diario-moderador-usuario"></select>
+<button class="secondary-btn" id="diario-moderador-alterar" type="button">Atualizar permissão</button>
+<p aria-live="polite" class="status-result" id="diario-moderadores-feedback"></p>
+</article>
+<article class="card planej-card" hidden="" id="planej-editor-box">
+<h4> Permissões de publicações e calendário</h4>
+<p class="secondary">Conceda a colegas aprovados apenas a edição de atividades, avisos e eventos acadêmicos. Não é acesso de Administração Geral.</p>
+<label for="planej-editor-usuario">Escolher estudante aprovado</label>
+<select class="planej-select" id="planej-editor-usuario"></select>
+<button class="secondary-btn" id="planej-editor-mudar" type="button">Atualizar permissão</button>
+<p class="status-result" id="planej-editor-feedback" role="status"></p>
+</article>
+<button class="secondary-btn" id="admin-back" style="margin-bottom:22px" type="button">← Voltar ao meu perfil</button>
+</section>
+</main>
+<nav aria-label="Navegação principal do CLAP" class="bottom-nav">
+<button aria-current="page" class="nav-btn" data-target="home" type="button"><span class="nav-icon" data-ui-icon="home"></span><span>Início</span></button>
+<button class="nav-btn" data-target="study" type="button"><span class="nav-icon" data-ui-icon="book"></span><span>Estudos</span></button>
+<button class="nav-btn" data-target="tasks" type="button"><span class="nav-icon" data-ui-icon="message"></span><span>Fórum</span></button>
+<button class="nav-btn" data-target="messages" type="button"><span class="nav-icon" data-ui-icon="users"></span><span>Mensagens</span></button>
+<button class="nav-btn" data-target="profile" type="button"><span class="nav-icon" data-ui-icon="user"></span><span>Perfil</span></button>
+</nav>
+</section>
+</div>
+
+<div id="clap69-privacy-dialog" class="clap69-cover" hidden role="dialog" aria-modal="true" aria-labelledby="clap69-title"><div class="clap69-modal"><h2 id="clap69-title">Privacidade no CLAP</h2><p>O CLAP usa dados de conta, perfil e registros acadêmicos para funcionar. Algumas publicações ficam visíveis à turma; mensagens e compromissos privados devem permanecer restritos.</p><p>Confira como seus dados são tratados e como solicitar correção ou exclusão.</p><a href="https://clapuepb-commits.github.io/clap-privacidade/" target="_blank" rel="noopener">Ler a Política de Privacidade completa</a><label class="clap69-checkbox"><input id="clap69-aware" type="checkbox"/> Li as informações e estou ciente da Política de Privacidade.</label><p id="clap69-message" role="status" aria-live="polite"></p><button id="clap69-accept" type="button" class="primary-btn">Continuar no CLAP</button></div></div>
 </body>
 </html>

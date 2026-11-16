@@ -1,0 +1,17 @@
+{
+  "name": "CLAP — Central de Lançamentos, Atividades e Prazos",
+  "short_name": "CLAP",
+  "description": "CLAP versão web para iPad mini 2",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#20132e",
+  "theme_color": "#6f35ac",
+  "icons": [
+    {
+      "src": "./assets/clap_logo.png",
+      "sizes": "360x360",
+      "type": "image/png"
+    }
+  ]
+}
